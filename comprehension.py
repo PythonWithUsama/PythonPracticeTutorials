@@ -24,6 +24,21 @@ here value:key for key,value in dict1.items() == value=key and key=value ky.. fo
 here dressess is class set variable and dress is a loop variable
 to find the class dressess varibales print(type(dressess))
 '''
-dressess = {dress for dress in ["black","blue","black","white","gray","white"]}
-print(dressess)
-print(type(dressess))
+# dressess = {dress for dress in ["black","blue","black","white","gray","white"]}
+# print(dressess)
+# print(type(dressess))
+
+'''
+Generator comprehension 
+
+'''
+
+even_numbers = (i for i in range(1,10) if i%2==0)
+for even in even_numbers:
+    print(even)
+    
+# print(even_numbers.__next__()) print one-by-one values using this method
+
+# print(even_numbers) # print address of the object
+
+# print(type(even_numbers))
